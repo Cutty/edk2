@@ -1,4 +1,4 @@
-/** @file  
+/** @file
   Application for Diffie-Hellman Primitives Validation.
 
 Copyright (c) 2010, Intel Corporation. All rights reserved.<BR>
@@ -30,13 +30,13 @@ ValidateCryptDh (
   VOID    *Dh2;
   UINT8   Prime[64];
   UINT8   PublicKey1[64];
-  UINTN   PublicKey1Length;
+  UINTN   PublicKey1Length = sizeof (PublicKey1);
   UINT8   PublicKey2[64];
-  UINTN   PublicKey2Length;
+  UINTN   PublicKey2Length = sizeof (PublicKey2);
   UINT8   Key1[64];
-  UINTN   Key1Length;
+  UINTN   Key1Length = sizeof (Key1);
   UINT8   Key2[64];
-  UINTN   Key2Length;
+  UINTN   Key2Length = sizeof (Key2);
   BOOLEAN Status;
 
   Print (L"\nUEFI-OpenSSL DH Engine Testing:\n");
